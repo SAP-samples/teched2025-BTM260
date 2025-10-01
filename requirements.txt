@@ -1,0 +1,15 @@
+# Core runtime
+jupyter
+ipykernel
+python-dotenv
+requests
+pydantic>=2.0
+sap-ai-sdk-gen[all]
+langgraph
+langchain
+langchain-core
+langchain-mcp-adapters
+langchain-openai
+# Optional agent tooling (can be expanded during workshop)
+httpx
+pandas
