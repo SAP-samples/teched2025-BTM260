@@ -38,10 +38,6 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name teched-workshop
 ```
 
-Copy `.env.example` to `.env` and fill in required values.
-
-See `.env.example` for required keys (SAP GenAI Core, OpenAI, LeanIX credentials). The code loads them via `dotenv`.
-
 ## Exercises
 
 - Exercise 1 - [Basic AI Agent loop](./exercises/ex1/ex1-basics.ipynb)
