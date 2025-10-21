@@ -23,7 +23,7 @@ In order to be able to follow the exercises in this repository, you need:
 1. VSCode with Jupyter extension
 2. Python installation
 3. Access to SAP BTP AI Core GenAI Hub with deployment of gpt-4.1
-4. A technical user API key for your LeanIX workspace
+4. Admin access to a LeanIX workspace
 
 All of this will be provided to TechEd 2025 onsite session participants.
 
