@@ -7,7 +7,7 @@ from gen_ai_hub.proxy.langchain import init_llm
 from IPython.display import Markdown, display
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
-
+from langgraph.graph.state import CompiledStateGraph
 
 def build_user_message(content: str) -> dict:
     """
@@ -131,7 +131,7 @@ async def create_portal_agent(
     max_tokens: int = 32767,
     system_prompt: Optional[str] = None,
     leanix_url: str = "https://demo-eu-2.leanix.net/services/mcp-server/v1/mcp",
-):
+) -> CompiledStateGraph:
     """
     Create a complete Employee Portal Agent with LeanIX integration.
 
