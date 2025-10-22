@@ -6,12 +6,22 @@ This repository contains the material for the SAP TechEd 2025 session BTM260 - B
 
 ## Overview
 
-In this session, we show you how to leverage the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) to access information in your LeanIX workspace. We will use a demo workspace for this purpose which is already filled with demo data describing the IT landscape of a fictional company. The screenshot below shows how your LeanIX workspace looks like in the beginning of this exercise.
+LeanIX is an enterprise architecture platform that gives visibility into complex IT landscapes, including SAP environments. For those working with SAP, it helps map system dependencies, streamline S/4HANA migrations, and manage application portfolios more effectively — supporting better decisions and faster transformations.
 
 ![LeanIX screenshot](./images/leanix-screenshot.png)
 
-We leverage the LeanIX MCP Server to connect AI Agents built in code with the data in the LeanIX workspace. Furthermore, we will show how this can be easily combined with MCP Servers from 3rd parties thus being able to contextualize data from these systems with your Enterprise Architecture source of truth.
+Many large LeanIX customers usually build lots of custom integrations with other enterprise applications in order to leverage LeanIX data or to import and/or curate LeanIX data based on information from these 3rd party systems. Building such integrations based on the existing [LeanIX APIs](https://help.sap.com/docs/leanix/ea/sap-leanix-apis?locale=en-US) is a process which takes much time and effort. 
 
+![Current state](./images/current-state.drawio.svg)
+
+With [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) we can now leverage AI to make this process much more seamless and effective. MCP exposes APIs with semantic descriptions as **MCP tools**. These tools can be exposed to a [Large Language Model (LLM)](https://en.wikipedia.org/wiki/Large_language_model) which then dynamically decides which tools to call for a specific task. This allows for much simpler integrations with business applications.
+
+![MCP Overview](./images/mcp-overview.drawio.svg)
+
+Especially, it allows to build specialized [AI Agents](https://cloud.google.com/discover/what-are-ai-agents?hl=en) which can complete tasks on users' behalf by planning and acting independently. AI Agents leverage LLMs and can use the tools exposed by MCP Servers without further guidance by the application developer. This drastically lowers time-to-value for integrating business applications.    
+
+In this session, we show you how to **leverage MCP to access information in your LeanIX workspace**. We will use a demo workspace for this purpose which is already filled with demo data describing the IT landscape of a fictional company. 
+We leverage the LeanIX MCP Server to connect AI Agents built in code with the data in the LeanIX workspace. 
 The following picture shows the anticipated architecture. You will work on the colored components. All other components will be provided by us.
 
 ![MCP Overview](./images/mcp-ai-app.drawio.svg)
@@ -20,9 +30,11 @@ The following picture shows the anticipated architecture. You will work on the c
 
 In order to be able to follow the exercises in this repository, you need:
 
-1. VSCode with Jupyter extension
-2. Python installation
-3. Access to SAP BTP AI Core GenAI Hub with deployment of gpt-4.1
+1. A working Python installation (at least Python 3.12 is required for the dependencies)
+    - You can check the Python version with `python --version` terminal command
+2. [VSCode](https://code.visualstudio.com/) with [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+    - If you are unfamiliar with Jupyter, please follow [this guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) to get started.
+3. Access to SAP BTP AI Core GenAI Hub with an active deployment of gpt-4.1 or comparable LLM
 4. Admin access to a LeanIX workspace
 
 All of this will be provided to TechEd 2025 onsite session participants.
