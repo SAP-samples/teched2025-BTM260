@@ -1,15 +1,15 @@
 # Core runtime
-jupyter
-ipykernel
-python-dotenv
-requests
-pydantic>=2.0
-sap-ai-sdk-gen[all]
-langgraph
-langchain
-langchain-core
-langchain-mcp-adapters
-langchain-openai
+jupyter==1.1.1
+ipykernel==7.0.1
+python-dotenv==1.1.1
+requests==2.32.5
+pydantic==2.11.10
+sap-ai-sdk-gen[all]==5.6.3
+langgraph==0.6.10
+langchain==0.3.27
+langchain-core==0.3.79
+langchain-mcp-adapters==0.1.11
+langchain-openai==0.3.35
 # Optional agent tooling (can be expanded during workshop)
-httpx
-pandas
+httpx==0.28.1
+pandas==2.3.3
