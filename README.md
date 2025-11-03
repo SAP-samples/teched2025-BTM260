@@ -74,6 +74,20 @@ python -m ipykernel install --user --name teched-workshop
 - Exercise 1 - [Basic AI Agent loop](./exercises/ex1/ex1-basics.ipynb)
 - Exercise 2 - [Build Employee Portal Chatbot](./exercises/ex2/ex2-build-employee-portal-chatbot.ipynb)
 
+## Outlook
+
+You can use the example code from the two exercises to continue your journey with AI Agents based on MCP and LeanIX.
+
+Besides the Python library we are using here, you can also build your Agents in TypeScript, e.g. using the [Mastra](https://mastra.ai/) framework.
+
+More things you can try:
+
+- An Agent that helps you to raise data quality in LeanIX - based on policies you defined in Confluence (Combining LeanIX MCP and Confluence MCP)
+- An Agent that helps you manage transformations (combining LeanIX MCP and JIRA MCP)
+
+![Outlook](./images/mcp-outlook.drawio.svg)
+
+
 ## Contributing
 
 Please read the [CONTRIBUTING.md](CONTRIBUTING.md) to understand contribution guidelines.
