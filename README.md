@@ -1,5 +1,7 @@
 # BTM260 - Building AI agents on your SAP LeanIX solutions with Model Context Protocol (MCP)
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-BTM260)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-BTM260)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2025 session BTM260 - Building AI agents on your SAP LeanIX solutions with Model Context Protocol (MCP).
@@ -10,7 +12,7 @@ LeanIX is an enterprise architecture platform that gives visibility into complex
 
 ![LeanIX screenshot](./images/leanix-screenshot.png)
 
-Many large LeanIX customers usually build lots of custom integrations with other enterprise applications in order to leverage LeanIX data or to import and/or curate LeanIX data based on information from these 3rd party systems. Building such integrations based on the existing [LeanIX APIs](https://help.sap.com/docs/leanix/ea/sap-leanix-apis?locale=en-US) is a process which takes much time and effort. 
+Many large LeanIX customers usually build lots of custom integrations with other enterprise applications in order to leverage LeanIX data or to import and/or curate LeanIX data based on information from these 3rd party systems. Building such integrations based on the existing [LeanIX APIs](https://help.sap.com/docs/leanix/ea/sap-leanix-apis?locale=en-US) is a process which takes much time and effort.
 
 ![Current state](./images/current-state.drawio.svg)
 
@@ -18,10 +20,10 @@ With [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting
 
 ![MCP Overview](./images/mcp-overview.drawio.svg)
 
-Especially, it allows to build specialized [AI Agents](https://cloud.google.com/discover/what-are-ai-agents?hl=en) which can complete tasks on users' behalf by planning and acting independently. AI Agents leverage LLMs and can use the tools exposed by MCP Servers without further guidance by the application developer. This drastically lowers time-to-value for integrating business applications.    
+Especially, it allows to build specialized [AI Agents](https://cloud.google.com/discover/what-are-ai-agents?hl=en) which can complete tasks on users' behalf by planning and acting independently. AI Agents leverage LLMs and can use the tools exposed by MCP Servers without further guidance by the application developer. This drastically lowers time-to-value for integrating business applications.
 
-In this session, we show you how to **leverage MCP to access information in your LeanIX workspace**. We will use a demo workspace for this purpose which is already filled with demo data describing the IT landscape of a fictional company. 
-We leverage the LeanIX MCP Server to connect AI Agents built in code with the data in the LeanIX workspace. 
+In this session, we show you how to **leverage MCP to access information in your LeanIX workspace**. We will use a demo workspace for this purpose which is already filled with demo data describing the IT landscape of a fictional company.
+We leverage the LeanIX MCP Server to connect AI Agents built in code with the data in the LeanIX workspace.
 The following picture shows the anticipated architecture. You will work on the colored components. All other components will be provided by us.
 
 ![MCP Overview](./images/mcp-ai-app.drawio.svg)
