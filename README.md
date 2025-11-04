@@ -26,6 +26,8 @@ In this session, we show you how to **leverage MCP to access information in your
 We leverage the LeanIX MCP Server to connect AI Agents built in code with the data in the LeanIX workspace.
 The following picture shows the anticipated architecture. You will work on the colored components. All other components will be provided by us.
 
+You can find detailed documentation about LeanIX MCP at <https://help.sap.com/docs/leanix/ea/mcp-server>
+
 ![MCP Overview](./images/mcp-ai-app.drawio.svg)
 
 ## Requirements
