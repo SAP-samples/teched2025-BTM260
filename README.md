@@ -52,6 +52,7 @@ Create & activate a virtual environment, install dependencies, and register the 
 
 ```bat
 setx PATH "%path%;C:\Program Files\Python313"
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
