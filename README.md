@@ -55,6 +55,7 @@ Create & activate a virtual environment, install dependencies, and register the 
 
 ```powershell
 powershell -Command "Start-Process powershell -Verb runAs -ArgumentList '-NoProfile -Command `"New-ItemProperty -Path ''HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem'' -Name ''LongPathsEnabled'' -Value 1 -PropertyType DWORD -Force`"'"
+
 py -m venv .venv
 
 .venv\Scripts\activate.ps1
