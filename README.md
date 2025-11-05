@@ -56,19 +56,30 @@ Create & activate a virtual environment, install dependencies, and register the 
 ```
 powershell -Command "Start-Process powershell -Verb runAs -ArgumentList '-NoProfile -Command `"New-ItemProperty -Path ''HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem'' -Name ''LongPathsEnabled'' -Value 1 -PropertyType DWORD -Force`"'"
 py -m venv .venv
+
 .venv\Scripts\activate.ps1
+
 pip install -r requirements.txt
+
 py -m ipykernel install --user --name teched-workshop
 ```
+When you open Exercise 1 or 2 for the first time, you will need to select a Python environment.
 
-1. Select Kernel -> Python Environments -> .venv (Python 3.13.5)
+Select Kernel -> Python Environments -> .venv (Python 3.13.5)
+
+- Open your Exercise 1 and press "Select Kernel"
+<img src="images/select-kernel.png" alt="Select Kernel" style="width:600px;">
+- When asked, select "Python Environments.."
+<img src="images/select-python-env.png" alt="Select Env" style="width:600px;">
+- Select the recommended .venv (Python 3.13.5)
+<img src="images/select-env.png" alt="Select VEnv" style="width:600px;">
 
 *Troubleshooting*
 In case you are getting a long path error, please try manually enabling this:
 
 1. Open the Registry Editor `regedit`
-1. Navigate to: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
-1. Set LongPathsEnabled to 1
+2. Navigate to: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+3. Set LongPathsEnabled to 1
 
 We will provide more generic instructions after the workshop.
 
