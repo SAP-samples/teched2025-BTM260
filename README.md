@@ -50,6 +50,13 @@ Create & activate a virtual environment, install dependencies, and register the 
 
 **These instructions here are for the Teched demo stations only!**
 
+1. Open the Registry Editor `regedit`
+1. Navigate to: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+1. Set LongPathsEnabled to 1
+1. Open VSCode
+2. Open integrated terminal: View -> Terminal
+3. Enter the instructions below step-by-step
+
 ```bat
 setx PATH "%path%;C:\Program Files\Python313"
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
