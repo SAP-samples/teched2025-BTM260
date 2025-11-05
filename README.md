@@ -47,17 +47,14 @@ All of this will be provided to TechEd 2025 onsite session participants.
 
 Create & activate a virtual environment, install dependencies, and register the Jupyter kernel.
 
-
 **These instructions here are for the Teched demo stations only!**
 
-1. Open the Registry Editor `regedit`
-1. Navigate to: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
-1. Set LongPathsEnabled to 1
 1. Open the repository folder in VSCode
 2. Open integrated terminal: View -> Terminal (PowerShell - pwsh)
 3. Enter the instructions below step-by-step
 
 ```
+powershell -Command "Start-Process powershell -Verb runAs -ArgumentList '-NoProfile -Command `"New-ItemProperty -Path ''HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem'' -Name ''LongPathsEnabled'' -Value 1 -PropertyType DWORD -Force`"'"
 py -m venv .venv
 .venv\Scripts\activate.ps1
 pip install -r requirements.txt
@@ -65,6 +62,13 @@ py -m ipykernel install --user --name teched-workshop
 ```
 
 1. Select Kernel -> Python Environments -> .venv (Python 3.13.5)
+
+*Troubleshooting*
+In case you are getting a long path error, please try manually enabling this:
+
+1. Open the Registry Editor `regedit`
+1. Navigate to: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+1. Set LongPathsEnabled to 1
 
 We will provide more generic instructions after the workshop.
 
