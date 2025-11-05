@@ -53,7 +53,7 @@ Create & activate a virtual environment, install dependencies, and register the 
 2. Open integrated terminal: View -> Terminal (PowerShell - pwsh)
 3. Enter the instructions below step-by-step
 
-```
+```powershell
 powershell -Command "Start-Process powershell -Verb runAs -ArgumentList '-NoProfile -Command `"New-ItemProperty -Path ''HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem'' -Name ''LongPathsEnabled'' -Value 1 -PropertyType DWORD -Force`"'"
 py -m venv .venv
 
