@@ -53,18 +53,15 @@ Create & activate a virtual environment, install dependencies, and register the 
 1. Open the Registry Editor `regedit`
 1. Navigate to: Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
 1. Set LongPathsEnabled to 1
-1. Open VSCode
-2. Open integrated terminal: View -> Terminal
+1. Open the repository folder in VSCode
+2. Open integrated terminal: View -> Terminal (PowerShell - pwsh)
 3. Enter the instructions below step-by-step
 
-```bat
-setx PATH "%path%;C:\Program Files\Python313"
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
-
-python -m venv .venv
-.venv\Scripts\activate.bat
+```
+py -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
-python -m ipykernel install --user --name teched-workshop
+py -m ipykernel install --user --name teched-workshop
 ```
 
 We will provide more generic instructions after the workshop.
