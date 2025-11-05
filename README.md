@@ -59,10 +59,12 @@ Create & activate a virtual environment, install dependencies, and register the 
 
 ```
 py -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate.ps1
 pip install -r requirements.txt
 py -m ipykernel install --user --name teched-workshop
 ```
+
+1. Select Kernel -> Python Environments -> .venv (Python 3.13.5)
 
 We will provide more generic instructions after the workshop.
 
