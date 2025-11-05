@@ -47,31 +47,19 @@ All of this will be provided to TechEd 2025 onsite session participants.
 
 Create & activate a virtual environment, install dependencies, and register the Jupyter kernel.
 
-**On macOS/Linux:**
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python3 -m ipykernel install --user --name teched-workshop
-```
 
-**On Windows (Command Prompt):**
+**These instructions here are for the Teched demo stations only!**
 
 ```bat
+setx PATH "%path%;C:\Program Files\Python313"
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate.bat
 pip install -r requirements.txt
 python -m ipykernel install --user --name teched-workshop
 ```
 
-**On Windows (PowerShell):**
+We will provide more generic instructions after the workshop.
 
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python -m ipykernel install --user --name teched-workshop
-```
 
 ## Exercises
 
